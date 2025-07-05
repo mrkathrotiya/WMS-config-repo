@@ -1,12 +1,9 @@
-server:
-  port: 8081
-
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true  # Automatically route using service names
-          lower-case-service-id: true
+cloud:
+  gateway:
+    discovery:
+      locator:
+        enabled: true  # Automatically route using service names
+        lower-case-service-id: true
 
         # routes:
         #  - id: product-service
