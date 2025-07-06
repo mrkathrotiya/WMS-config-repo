@@ -21,9 +21,3 @@ spring:
     show-sql: true
     properties:
       hibernate.format_sql: true
-
-#===JWT
-security:
-  jwt:
-    secret-key: 9b49cc7622a06c36b3984d9483fc2766aa58d18fac147ff07f2783b0b5cc1e67
-    expiration-time: 604800000
