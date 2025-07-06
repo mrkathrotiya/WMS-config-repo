@@ -1,11 +1,12 @@
 server:
   port: 8081
 
-cloud:
+spring:
+  cloud:
     gateway:
       discovery:
         locator:
-          enabled: true  # Automatically route using service names
+          enabled: true
           lower-case-service-id: true
 
         # routes:
