@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: AUTH-SERVICE
+    name: auth-service
   cloud:
     gateway:
       discovery:
