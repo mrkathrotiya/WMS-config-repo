@@ -2,8 +2,8 @@ server:
   port: 8084
 
 spring:
-  # application:
-  #   name: warehouse-service
+  application:
+    name: warehouse-service
 
   jpa:
     hibernate:
