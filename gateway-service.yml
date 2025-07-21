@@ -22,4 +22,8 @@ spring:
               uri: lb://WAREHOUSE-SERVICE
               predicates:
                 - Path=/api/admin/warehouse/**, /api/warehouse/**, /api/manager/warehouse/**
+            - id: inventory-service
+              uri: lb://INVENTORY-SERVICE
+              predicates:
+                - Path=/api/inventory/product/**
 
