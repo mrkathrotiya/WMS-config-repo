@@ -18,4 +18,8 @@ spring:
               uri: lb://PRODUCT-SERVICE
               predicates:
                 - Path=/api/admin/product/**, /api/product/**, /api/manager/product/**, /api/staff/product/**
+            - id: warehouse-service
+              uri: lb://WAREHOUSE-SERVICE
+              predicates:
+                - Path=/api/admin/warehouse/**, /api/warehouse/**, /api/manager/warehouse/**
 
