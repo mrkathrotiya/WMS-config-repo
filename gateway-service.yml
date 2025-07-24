@@ -14,16 +14,24 @@ spring:
               uri: lb://AUTH-SERVICE
               predicates:
                 - Path=/auth/**, /user/**, /admin/users
+
             - id: product-service
               uri: lb://PRODUCT-SERVICE
               predicates:
                 - Path=/api/admin/product/**, /api/product/**, /api/manager/product/**, /api/staff/product/**
+
             - id: warehouse-service
               uri: lb://WAREHOUSE-SERVICE
               predicates:
                 - Path=/api/admin/warehouse/**, /api/warehouse/**, /api/manager/warehouse/**
+
             - id: inventory-service
               uri: lb://INVENTORY-SERVICE
               predicates:
                 - Path=/api/inventory/product/**
+                  
+            - id: supplier-service
+              uri: lb://SUPPLIER-SERVICE
+              predicates:
+                - Path=/api/purchase-order/**, /api/supplier/**
 
